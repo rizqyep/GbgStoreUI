@@ -3,6 +3,9 @@ body {
 	font-family: 'Source Sans Pro';
 }
 
+.container {
+	border-radius: 5px;
+}
 
 .checkout-img-frame {
 	max-height: 300px;
