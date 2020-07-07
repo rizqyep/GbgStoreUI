@@ -1,0 +1,129 @@
+/*Detail Produk Section*/
+.detail-img-frame {
+	max-height: 300px;
+	max-width: 300px;
+	border-radius: 10px;
+
+}
+
+.detail-img {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.harga {
+	color: #f62121;
+	font-weight: bold;
+
+
+}
+
+.stock {
+
+	font-weight: bold;
+}
+
+.amount .btn-amount {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+.amount .form-amount {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: solid 2px rgba(85, 85, 85, 0.705);
+	width: 30px;
+}
+
+.amount .form-amount:focus {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: solid 2px rgba(65, 102, 204, 0.705);
+	outline: 0;
+	width: 30px;
+	text-align: center;
+}
+
+/*End Detail Produk*/
+
+
+/*Start Toko Section*/
+
+/*End Toko Section*/
+
+/*Container Produk Section*/
+.produk-container {
+
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+
+}
+
+.produk-container .produk-container-header {
+	font-weight: 700;
+
+
+}
+
+.produk-container .show-all {
+	color: '#449c3f';
+	font-weight: bold;
+
+	margin-right: 3%;
+}
+
+.card .btn-show {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.produk-container .card {
+	padding: 10px;
+	max-width: 80%;
+	height: 350px;
+	box-shadow: 1px 5px 5px #dddd;
+	text-align: left;
+	border-radius: 10px;
+}
+
+.card .card-body {
+	padding: 0;
+}
+
+
+
+.card-image .card-img-top {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.card-body .card-title {
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
+.card .card-text {
+	color: #f62121;
+	font-weight: bold;
+
+
+}
+
+
+
+/*Container Produk End*/

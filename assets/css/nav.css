@@ -1,0 +1,15 @@
+.navbar-brand .navLogo {
+	height: 50px;
+
+}
+
+.navbar {
+	border-bottom: 3px solid #dddd;
+	box-shadow: 1px 1px 10px #dddd;
+	font-family: 'Source Sans Pro';
+
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+	font-weight: 700;
+}

@@ -1,0 +1,18 @@
+background #F2F2F2
+
+landing page
+1. hijau: #3A9070 #449C3F
+2. merah: #F62121
+3. hitam: #000000
+4. abu-abu: #E7E8E3 opacity 30%
+
+Checkout
+1. hijau: #449C3F
+2. merah: #F62121
+3. Orange: #FF7800
+
+detail produk
+1. putih: #FFFFFF
+2. Button beli sekarang: #F62121
+3. hijau button: #449C3F
+4. Hijau tulisan hanya untuk anda: #388A6B
