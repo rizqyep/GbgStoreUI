@@ -1,14 +1,11 @@
 /*Detail Produk Section*/
-.detail-img-frame {
-	max-height: 300px;
-	max-width: 300px;
-	border-radius: 10px;
-
-}
 
 .detail-img {
-	height: 100%;
-	width: 100%;
+	width: 230px;
+	/* width of container */
+	height: 320px;
+	/* height of container */
+	object-fit: cover;
 	border-radius: 10px;
 }
 
