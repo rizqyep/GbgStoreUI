@@ -1,0 +1,22 @@
+@media only screen and (min-width: 600px) {
+	.regist-box {
+		width: 40vw;
+	}
+
+}
+
+body {
+	background: url('./assets/img/bg/bgregist.jpeg');
+	background-repeat: no-repeat;
+}
+
+form .btn-daftar {
+	width: 100%;
+	background-color: #2b2a2a;
+	color: white;
+	font-weight: 600;
+}
+
+.regist-box {
+	background-color: #ffffffb4;
+}
