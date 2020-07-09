@@ -3,6 +3,10 @@ body {
 	font-family: 'Source Sans Pro';
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .container {
 	border-radius: 5px;
 }

@@ -1,182 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gambung Store - Checkout</title>
-	<link rel="shortcut icon" href="assets/img/logo/Logo Gambung.png" type="image/x-icon">
-	<link rel="stylesheet" href="assets/css/checkout.css">
-	<link rel="stylesheet" href="assets/css/nav.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
-		rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambung Store - Checkout</title>
+    <link rel="shortcut icon" href="assets/img/logo/Logo Gambung.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
-	<style>
-		body {
-			background-color: #f2f2f2;
-		}
+    <style>
+      body {
+        background-color: #f2f2f2;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/3d25580851.js" crossorigin="anonymous"></script>
 
-	</style>
-	<script src="https://kit.fontawesome.com/3d25580851.js" crossorigin="anonymous"></script>
+  </head>
 
-</head>
+  <body>
+    <!-- Start Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img class="navLogo" src="assets/img/logo/Logo Gambung.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-	<!-- Start Navbar Section -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.html"><img class="navLogo" src="assets/img/logo/Logo Gambung.png"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Produk</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Kontak Kami</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Cari Produk" style="width : 600px;height : 40px;">
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit">
+                <i class="ui search icon"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav ml-auto pl-0" style="border-right: 1px solid #e7e8e3e0; width : 130px;">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fas fa-bell "></i>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto pl-0" style="width :200px;">
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Produk</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Kontak Kami</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Cari Produk"
-						style="width : 600px;height : 40px;">
-					<div class="input-group-append">
-						<button class="btn btn-success" type="submit"><i class="ui search icon"></i></button>
-					</div>
-				</div>
-			</form>
-			<ul class="navbar-nav ml-auto pl-0" style="border-right: 1px solid #e7e8e3e0; width : 130px;">
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><i class="fas fa-bell "></i></a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto pl-0" style="width :200px;">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-user-circle mr-2"></i>Aditya Kusumadhinata</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar Section -->
 
-				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-user-circle mr-2"></i>Aditya Kusumadhinata</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!-- End Navbar Section -->
+    <div class="container mb-5">
+      <h4 class="font-weight-bold mb-3 mt-5">Checkout</h4>
+      <div class="row">
+        <div class="col-lg-6 pt-3 pl-3">
+          <!--Start Alamat Section-->
+          <div class="container shadow pt-4 pl-4 pr-4 pb-5" style="background-color : #ffffff;">
+            <p class="font-weight-bold">Alamat Pengiriman</p>
 
+            <h5 class="font-weight-bold">Febi Titania</h5>
+            <p>Jalan Sukabirus, Kec. Dayeuh Kolot, Kab.Bandung , Jawa Barat, 40257</p>
+            <button class="btn btn-success font-weight-bold">Pilih Alamat Lain</button>
+          </div>
+          <!--End Alamat Section-->
+          <!--Start Cart Section-->
+          <div class="container shadow mt-1 pt-4 pl-4 pr-4 pb-5" style="background-color : #ffffff;">
+            <h5 class=" font-weight-bold mb-5">Produk</h5>
+            <div class="row mt-3">
+              <div class="col-3">
+                <div class="checkout-img-frame">
+                  <img src="assets/img/produk/kripik.jpeg" alt="" class="checkout-img">
+                </div>
+              </div>
+              <div class="col-9">
+                <h5>Kripik Teh</h5>
+                <p class="harga">Rp.18.500</p>
+                <p class="text-muted font-weight bold">1 Produk</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-3">
+                <div class="checkout-img-frame">
+                  <img src="assets/img/produk/teh.jpeg" alt="" class="checkout-img">
+                </div>
+              </div>
+              <div class="col-9">
+                <h5>Green Tea Latte</h5>
+                <p class="harga">Rp.15.500</p>
+                <p class="text-muted font-weight bold">1 Produk</p>
+              </div>
+            </div>
+          </div>
+          <!--End Cart Section-->
+          <!--Start Pesanan Section-->
+          <div class="container pl-4 pt-4 pb-5 pr-4 shadow mt-1" style="background-color: #ffffff;">
+            <h5 class="font-weight-bold mb-3">Pesanan Anda</h5>
+            <table class="table">
+              <thead>
+                <th scope="col">Produk</th>
+                <th scope="col">Jumlah</th>
+                <th scope="col">Subtotal</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kripik Teh</td>
+                  <td>1</td>
+                  <td>Rp.18.500</td>
+                </tr>
+                <tr>
+                  <td>Green Tea Latte</td>
+                  <td>1</td>
+                  <td>Rp.15.500</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="font-weight-bold">Pengiriman</h5>
+            <p style="font-size: 12px;">Dari Kota Bandung</p>
+            <p style="font-size : 12px;">berat 5 gr</p>
+            <div class="form-group">
+              <select class="form-control font-weight-bold">
+                <option value="">SiCepat Layanan Reguler : Rp.26.000</option>
+                <option value="">JnT Express : Rp.32.000</option>
+              </select>
+            </div>
 
-	<div class="container mb-5">
-		<h4 class="font-weight-bold mb-3 mt-5">Checkout</h4>
-		<div class="row">
-			<div class="col-lg-6 pt-3 pl-3">
-				<!--Start Alamat Section-->
-				<div class="container shadow pt-4 pl-4 pr-4 pb-5" style="background-color : #ffffff;">
-					<p class="font-weight-bold">Alamat Pengiriman</p>
+            <h5 class="font-weight-bold mt-3">Subtotal
+              <span class="float-right">Rp.60.000</span></h5>
+          </div>
+          <!--End Pesanan Section-->
+        </div>
+        <!--End Left Side Section-->
+        <!--Start Right Side Section-->
+        <div class="col-lg-6 mt-3">
+          <div class="container shadow pt-4 pl-4 pr-2 pb-5" style="background-color : #ffffff;">
+            <p class="font-weight-bold">Jika anda memiliki kode voucher silahkan masukkan dibawah ini</p>
+            <div class="input-group">
+              <input type="text" placeholder="Kode voucher anda" class="form-control">
+              <div class="input-group-append">
+                <button class="btn btn-success font-weight-bold">Masukkan Kode</button>
+              </div>
+            </div>
+          </div>
+          <div class="container shadow pt-4 pl-4 pr-2 pb-5 mt-1 pr-4" style="background-color : #ffffff;">
+            <h6 class="font-weight-bold">Ringkasan Belanja</h6>
+            <hr>
+            <p>Total Harga
+              <span class="float-right">Rp.34.000</span></p>
+            <p>Total Ongkos Kirim
+              <span class="float-right">Rp.26.000</span></p>
+            <p>Total Tagihan
+              <span class="float-right harga">Rp.60.000</span></p>
+            <button class="btn btn-orange">Bayar Sekarang</button>
+          </div>
+        </div>
+        <!--End Right Side Section-->
+      </div>
+    </div>
 
-					<h5 class="font-weight-bold">Febi Titania</h5>
-					<p>Jalan Sukabirus, Kec. Dayeuh Kolot, Kab.Bandung , Jawa Barat, 40257</p>
-					<button class="btn btn-success font-weight-bold">Pilih Alamat Lain</button>
-				</div>
-				<!--End Alamat Section-->
-				<!--Start Cart Section-->
-				<div class="container shadow mt-1 pt-4 pl-4 pr-4 pb-5" style="background-color : #ffffff;">
-					<h5 class=" font-weight-bold mb-5">Produk</h5>
-					<div class="row mt-3">
-						<div class="col-3">
-							<div class="checkout-img-frame">
-								<img src="assets/img/produk/kripik.jpeg" alt="" class="checkout-img">
-							</div>
-						</div>
-						<div class="col-9">
-							<h5>Kripik Teh</h5>
-							<p class="harga">Rp.18.500</p>
-							<p class="text-muted font-weight bold">1 Produk</p>
-						</div>
-					</div>
-					<div class="row mt-3">
-						<div class="col-3">
-							<div class="checkout-img-frame">
-								<img src="assets/img/produk/teh.jpeg" alt="" class="checkout-img">
-							</div>
-						</div>
-						<div class="col-9">
-							<h5>Green Tea Latte</h5>
-							<p class="harga">Rp.15.500</p>
-							<p class="text-muted font-weight bold">1 Produk</p>
-						</div>
-					</div>
-				</div>
-				<!--End Cart Section-->
-				<!--Start Pesanan Section-->
-				<div class="container pl-4 pt-4 pb-5 pr-4 shadow mt-1" style="background-color: #ffffff;">
-					<h5 class="font-weight-bold mb-3">Pesanan Anda</h5>
-					<table class="table">
-						<thead>
-							<th scope="col">Produk</th>
-							<th scope="col">Jumlah</th>
-							<th scope="col">Subtotal</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Kripik Teh</td>
-								<td>1</td>
-								<td>Rp.18.500</td>
-							</tr>
-							<tr>
-								<td>Green Tea Latte</td>
-								<td>1</td>
-								<td>Rp.15.500</td>
-							</tr>
-						</tbody>
-					</table>
-					<h5 class="font-weight-bold">Pengiriman</h5>
-					<p style="font-size: 12px;">Dari Kota Bandung</p>
-					<p style="font-size : 12px;">berat 5 gr</p>
-					<button class="btn-success btn font-weight-bold">SiCepat Layanan Reguler : Rp.26.000</button>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script async="async" defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-					<h5 class="font-weight-bold mt-3">Subtotal <span class="float-right">Rp.60.000</span></h5>
-				</div>
-				<!--End Pesanan Section-->
-			</div>
-			<!--End Left Side Section-->
-			<!--Start Right Side Section-->
-			<div class="col-lg-6 mt-3">
-				<div class="container shadow pt-4 pl-4 pr-2 pb-5" style="background-color : #ffffff;">
-					<p class="font-weight-bold">Jika anda memiliki kode voucher silahkan masukkan dibawah ini</p>
-					<div class="input-group">
-						<input type="text" placeholder="Kode voucher anda" class="form-control">
-						<div class="input-group-append"> <button class="btn btn-success font-weight-bold">Masukkan
-								Kode</button></div>
-					</div>
-				</div>
-				<div class="container shadow pt-4 pl-4 pr-2 pb-5 mt-1 pr-4" style="background-color : #ffffff;">
-					<h6 class="font-weight-bold">Ringkasan Belanja</h6>
-					<hr>
-					<p>Total Harga <span class="float-right">Rp.34.000</span></p>
-					<p>Total Ongkos Kirim <span class="float-right">Rp.26.000</span></p>
-					<p>Total Tagihan <span class="float-right harga">Rp.60.000</span></p>
-					<button class="btn btn-orange">Bayar Sekarang</button>
-				</div>
-			</div>
-			<!--End Right Side Section-->
-		</div>
-	</div>
-
-
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-	<script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-</body>
+  </body>
 
 </html>
