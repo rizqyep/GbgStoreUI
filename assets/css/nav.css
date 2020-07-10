@@ -13,3 +13,9 @@
 .navbar .navbar-nav .nav-item .nav-link {
 	font-weight: 700;
 }
+
+.phone-nav .nav-icon {
+	color: black;
+	font-size: 18px;
+
+}

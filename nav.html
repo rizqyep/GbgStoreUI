@@ -1,13 +1,30 @@
-	<!-- Start Navbar Section -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.html"><img class="navLogo" src="assets/img/logo/Logo Gambung.png"></a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+		<a class="navbar-brand d-none d-lg-block" href="index.html"><img class="navLogo"
+				src="assets/img/logo/Logo Gambung.png"></a>
+
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+		<form class="form-inline my-2 my-lg-0 ml-lg-5 mr-lg-5">
+			<div class="input-group">
+				<input type="text" class="form-control search-input" placeholder="Cari Produk">
+				<div class="input-group-append">
+					<button class="btn btn-success" type="submit"><i class="ui search icon"></i></button>
+				</div>
+			</div>
+		</form>
+		<div class="phone-nav d-lg-none mt-2">
+			<p>
+				<a class="nav-icon" href="#"><i class="fas fa-shopping-cart mr-3"></i></a>
 
+				<a class="nav-icon" href="#"><i class="fas fa-bell mr-3"></i></a>
+
+				<a class="nav-icon" href="#"><i class="fas fa-user-circle mr-3"></i></a>
+			</p>
+		</div>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
+			<ul class="navbar-nav mr-auto" style="width : 200px;">
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Produk</a>
 				</li>
@@ -15,31 +32,24 @@
 					<a class="nav-link" href="#">Kontak Kami</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Cari Produk" style="width : 600px;height : 40px;">
-					<div class="input-group-append">
-						<button class="btn btn-success" type="submit"><i class="ui search icon"></i></button>
-					</div>
-				</div>
-			</form>
-			<ul class="navbar-nav ml-auto pl-0" style="border-right: 1px solid #e7e8e3e0; width : 130px;">
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><i class="ui cart icon"></i></a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><i class="ui bell icon"></i></a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><i class="ui mail icon"></i></a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto pl-0" style="width :200px;">
+			<span class="d-none d-lg-block">
+				<ul class="navbar-nav ml-auto pl-0">
+					<li class="nav-item active">
+						<a class="nav-link mr-3" href="#"><i class="fas fa-shopping-cart"></i></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link mr-3" href="#"><i class="fas fa-bell "></i></a>
+					</li>
+					<li class="nav-item active" style="border-right: solid 1px grey;">
+						<a class="nav-link mr-3" href="#"><i class="fas fa-envelope"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link ml-2" href="#"><i class="fas fa-user-circle mr-2"></i>Aditya
+							Kusumadhinata</a>
+					</li>
+				</ul>
+			</span>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="ui user icon"></i>Aditya Kusumadhinata</a>
-				</li>
-			</ul>
 		</div>
+
 	</nav>
-	<!-- End Navbar Section -->
