@@ -177,6 +177,11 @@
 
 @media only screen and (min-width: 600px) {
 
+	.navbar .input-group {
+		width: 600px;
+		margin-right: 50px;
+		margin-left: 100px;
+	}
 
 	.carousel {
 		box-shadow: 1px 5px 10px #dddd;

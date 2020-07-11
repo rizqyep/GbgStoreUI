@@ -21,17 +21,19 @@
 }
 
 
-@media only screen and (min-width: 600px) {
-	.navbar .form-inline .search-input {
-		width: 600px;
+@media only screen and (max-width: 599px) {
+	.navbar .input-group {
+		max-width: 200px;
+		left: 2;
+		margin-right: 10px;
 	}
-
 }
 
-@media only screen and (max-width: 599px) {
-	.navbar .form-inline .search-input {
-		width: 200px;
-		margin-left: 0;
-	}
+@media only screen and (min-width: 600px) {
 
+	.navbar .input-group {
+		width: 600px;
+		margin-right: 50px;
+		margin-left: 100px;
+	}
 }
