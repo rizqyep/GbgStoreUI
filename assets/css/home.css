@@ -3,6 +3,12 @@ body {
 	font-family: 'Source Sans Pro';
 }
 
+.show-all {
+	color: rgb(4, 177, 4);
+}
+
+
+
 /*Carousel Section*/
 @media only screen and (max-width: 599px) {
 	.navbar .input-group {
