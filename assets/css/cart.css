@@ -19,6 +19,8 @@
 
 
 
+
+
 @media screen and (min-width : 600px) {
 	.total-wrap {
 		border-radius: 20px;
@@ -30,6 +32,16 @@
 		object-fit: cover;
 		border-radius: 10px;
 	}
+
+	.amount .btn-amount {
+		border-radius: 50%;
+		height: 40px;
+		width: 40px;
+		font-weight: bold;
+		font-size: 20px;
+
+	}
+
 }
 
 @media screen and (max-width : 599px) {
@@ -41,6 +53,8 @@
 		background-color: #ffffff;
 	}
 
+
+
 	.cart-image {
 		height: 80px;
 		width: 80px;
@@ -49,8 +63,20 @@
 	}
 
 	.btnhapus {
-		margin-left: 25%;
+		width: 20px;
+		left: 0;
 	}
+
+
+
+	.amount .btn-amount {
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		font-weight: bold;
+		font-size: 10px;
+	}
+
 
 
 }
@@ -63,15 +89,6 @@
 
 .total-wrap .harga {
 	color: red;
-}
-
-.amount .btn-amount {
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	font-weight: bold;
-	font-size: 20px;
-
 }
 
 .amount .form-amount {
