@@ -2,16 +2,33 @@
 	border-radius: 20px;
 }
 
-.cart-image {
-	height: 150px;
-	width: 150px;
-	object-fit: cover;
-	border-radius: 10px;
+
+.cart-item .btncheck {
+	font-size: 20px;
+	outline: none;
+	box-shadow: none;
+	webkit-box-shadow: none
 }
+
+.cart-item .btncheck:focus {
+	font-size: 20px;
+	outline: none;
+	box-shadow: none;
+	color: blue;
+}
+
+
 
 @media screen and (min-width : 600px) {
 	.total-wrap {
 		border-radius: 20px;
+	}
+
+	.cart-image {
+		height: 150px;
+		width: 150px;
+		object-fit: cover;
+		border-radius: 10px;
 	}
 }
 
@@ -22,6 +39,17 @@
 		bottom: 0;
 		z-index: 10;
 		background-color: #ffffff;
+	}
+
+	.cart-image {
+		height: 80px;
+		width: 80px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+	.btnhapus {
+		margin-left: 25%;
 	}
 
 
