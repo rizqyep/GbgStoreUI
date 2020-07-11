@@ -33,58 +33,60 @@
 
 <body>
 	<!-- Start Navbar Section -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.html"><img class="navLogo" src="assets/img/logo/Logo Gambung.png"></a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+		<a class="navbar-brand d-none d-lg-block" href="index.html"><img class="navLogo"
+				src="assets/img/logo/Logo Gambung.png"></a>
+
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+		<form class="form-inline my-2 my-lg-0 ml-lg-5 mr-lg-5">
+			<div class="input-group">
+				<input type="text" class="form-control search-input" placeholder="Cari Produk">
+				<div class="input-group-append">
+					<button class="btn btn-success" type="submit"><i class="ui search icon"></i></button>
+				</div>
+			</div>
+		</form>
+		<div class="phone-nav d-lg-none mt-2">
+			<p>
+				<a class="nav-icon" href="cart.html"><i class="fas fa-shopping-cart mr-3"></i></a>
 
+				<a class="nav-icon" href="#"><i class="fas fa-bell mr-3"></i></a>
+
+				<a class="nav-icon" href="#"><i class="fas fa-user-circle mr-3"></i></a>
+			</p>
+		</div>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
+			<ul class="navbar-nav mr-auto" style="width : 200px;">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Produk</a>
+					<a class="nav-link" href="produk.html">Produk</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Kontak Kami</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Cari Produk"
-						style="width : 600px;height : 40px;">
-					<div class="input-group-append">
-						<button class="btn btn-success" type="submit">
-							<i class="ui search icon"></i>
-						</button>
-					</div>
-				</div>
-			</form>
-			<ul class="navbar-nav ml-auto pl-0" style="border-right: 1px solid #e7e8e3e0; width : 130px;">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">
-						<i class="fas fa-shopping-cart"></i>
-					</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">
-						<i class="fas fa-bell "></i>
-					</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">
-						<i class="fas fa-envelope"></i>
-					</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto pl-0" style="width :200px;">
+			<span class="d-none d-lg-block">
+				<ul class="navbar-nav ml-auto pl-0">
+					<li class="nav-item active">
+						<a class="nav-link mr-3" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link mr-3" href="#"><i class="fas fa-bell "></i></a>
+					</li>
+					<li class="nav-item active" style="border-right: solid 1px grey;">
+						<a class="nav-link mr-3" href="#"><i class="fas fa-envelope"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link ml-2" href="#"><i class="fas fa-user-circle mr-2"></i>Aditya
+							Kusumadhinata</a>
+					</li>
+				</ul>
+			</span>
 
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="fas fa-user-circle mr-2"></i>Aditya Kusumadhinata</a>
-				</li>
-			</ul>
 		</div>
+
 	</nav>
 	<!-- End Navbar Section -->
 
@@ -102,7 +104,7 @@
 				</div>
 				<!--End Alamat Section-->
 				<!--Start Cart Section-->
-				<div class="container shadow mt-1 pt-4 pl-4 pr-4 pb-5" style="background-color : #ffffff;">
+				<div class="container shadow mt-5 pt-4 pl-4 pr-4 pb-5" style="background-color : #ffffff;">
 					<h5 class=" font-weight-bold mb-5">Produk</h5>
 					<div class="row mt-3">
 						<div class="col-3">
@@ -131,7 +133,7 @@
 				</div>
 				<!--End Cart Section-->
 				<!--Start Pesanan Section-->
-				<div class="pesanan-container container pl-4 pt-4 pb-5 pr-4 shadow mt-1"
+				<div class="pesanan-container container pl-4 pt-4 pb-5 pr-4 shadow mt-5"
 					style="background-color: #ffffff;">
 					<h5 class="font-weight-bold mb-3">Pesanan Anda</h5>
 					<table class="table">
@@ -180,7 +182,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="container shadow pt-4 pl-4 pr-2 pb-5 mt-1 pr-4" style="background-color : #ffffff;">
+				<div class="container shadow pt-4 pl-4 pr-2 pb-5 mt-5 pr-4" style="background-color : #ffffff;">
 					<h6 class="font-weight-bold">Ringkasan Belanja</h6>
 					<hr>
 					<p>Total Harga

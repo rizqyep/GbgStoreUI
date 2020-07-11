@@ -19,3 +19,19 @@
 	font-size: 18px;
 
 }
+
+
+@media only screen and (min-width: 600px) {
+	.navbar .form-inline .search-input {
+		width: 600px;
+	}
+
+}
+
+@media only screen and (max-width: 599px) {
+	.navbar .form-inline .search-input {
+		width: 200px;
+		margin-left: 0;
+	}
+
+}

@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gambung Store - Detail Produk</title>
+	<title>Gambung Store - Produk</title>
 	<link rel="shortcut icon" href="assets/img/logo/Logo Gambung.png" type="image/x-icon">
-	<link rel="stylesheet" href="assets/css/detail.css">
+	<link rel="stylesheet" href="assets/css/home.css">
 	<link rel="stylesheet" href="assets/css/nav.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -14,13 +14,10 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
 		rel="stylesheet">
+
 	<script src="https://kit.fontawesome.com/3d25580851.js" crossorigin="anonymous"></script>
 	<style>
-		@media only screen and (max-width:599px) {
-			.detail-img {
-				margin-left: 25%;
-			}
-		}
+
 
 	</style>
 </head>
@@ -83,181 +80,69 @@
 
 	</nav>
 	<!-- End Navbar Section -->
-	<div class="container detail-container">
-		<div class="row mt-5">
-			<div class="col-lg-3">
-				<h3 class="font-weight-bold ml-2 mb-3">Detail Produk</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-3">
-				<img class="detail-img mt-3 mb-3" src="assets/img/detail/teh.jpeg" alt="">
-			</div>
-			<div class="col-lg-9 pl-5">
-				<h2 class="mt-3">Indonesian Green Tea Latte</h2>
-				<div class="row mt-3">
-					<div class="col-lg-2">
-						<p class="font-weight-bold">60x <span class="text-muted">Terjual</span></p>
-					</div>
-					<div class="col-lg-2">
-						<p class="font-weight-bold">4x <span class="text-muted">Wishlist</span></p>
-					</div>
-					<div class="col-lg-2">
-						<a href="#" class="font-weight-bold" style="color : black"><i style="font-size : 24px;"
-								class="fas fa-heart"></i></a>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-lg-2 mt-1">
-						<p>Harga</p>
-					</div>
-					<div class="col-lg-10">
-						<h4 class="harga">Rp.35000</h4>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-lg-2 mt-1">
-						<p>Available Stock</p>
-					</div>
-					<div class="col-lg-10">
-						<h4 class="stock">100 pcs</h4>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-lg-2 mt-1">
-						<p>Kuantitas</p>
-					</div>
-					<div class="col-lg-10">
-						<span class="d-inline amount">
-							<button class="btn btn-success btn-sm text-center btn-amount">-</button>
-							<input type="text" class="form-amount">
-							<button class="btn btn-success btn-sm text-center btn-amount">+</button>
-						</span>
-					</div>
-				</div>
-				<div class="row mt-5 mb-5">
-					<div class="col-lg-4">
-					</div>
-					<div class="col-lg-2"></div>
-					<div class="col-lg-6">
-						<button class=" btn btn-secondary"><i class="fas fa-share mr-2"></i>Share</button>
-						<button class=" btn btn-light btnbeli text-center"
-							style="width : 50px; border : 1px solid black;"><i
-								class="fas fa-shopping-cart"></i></button>
-						<a href="cart.html" class="btn btn-danger">Beli Sekarang</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!--End Detail Produk Sectiopn-->
-	<hr style="background-color: #dad8d8d5; height : 20px;margin-bottom: 0;">
-	<!--Start Toko Section-->
-	<div class="container toko-container">
-		<div class="row">
-			<div class="col-lg-3 pt-3 pb-2">
-				<img class="logo-toko" height=80 src="assets/img/logo/Logo Gambung.png" alt="">
-			</div>
-			<div class="col-lg-3 pt-3 pl-4" style="border-right: 1px solid rgba(172, 171, 171, 0.74);">
-				<p style="font-weight : 600">Toko Gambung</p>
-				<p style="font-weight : 600"><i class="fas fa-map-marker-alt mr-2"></i>Bandung</p>
-				<div class="row mt-3 pl-3">
-					<div class=" d-inline">
-						<button class="btn btn-outline-success font-weight-bold">Hubungi Toko</button>
-						<button class="btn btn-outline-success font-weight-bold">Info Toko</button>
-					</div>
-				</div>
-			</div>
+	<!-- Start Carousel Section -->
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
 
-			<div class="col-lg-6 pt-3">
-				<div class="row mt-3 d-block d-lg-none"></div>
-				<h5 class="ml-3" style="font-weight : 600">Jasa Ekspedisi</h5>
-				<p class="pt-2 pb-2 pl-3">
-					<img src="assets/img/logo/other/sicepat.png" height=60 alt="">
-					<img class="ml-3" src="assets/img/logo/other/jnt.png" height=80 alt="">
-					<img class="ml-3" src="assets/img/logo/other/Logo JNE.png" height=80 alt="">
-					<img class="ml-3" src="assets/img/logo/other/ninjaxpress.png" height=80 alt="">
-					<img class="ml-3" src="assets/img/logo/other/tiki.png" height=80 alt="">
-				</p>
-			</div>
-		</div>
-	</div>
-	</div>
-	<!--End Toko Section-->
-	<hr style="background-color: #dad8d8d5; height : 20px;margin-bottom: 0;">
-	<!--Start Deskripsi Section-->
-	<div class="container">
-		<div class="row-mt-3">
-			<div class="col-12 pt-3 pb-5">
-				<h4 class="font-weight-bold mb-4">Deskripsi Produk</h4>
-				<p>------------------------------------------</p>
-				<p>------------------------------------------</p>
-				<p>------------------------------------------</p>
-				<p>------------------------------------------</p>
-				<p>------------------------------------------</p>
-			</div>
-		</div>
-	</div>
-	<!--End Deskirpsi Section-->
-	<hr style="background-color: #dad8d8d5; height : 20px;margin-bottom: 0;">
-	<!--Start Ulasan Section-->
-	<div class="container  pt-3">
-		<div class="row pl-3">
-			<div class="col-12">
-				<h3>Ulasan</h3>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col-lg-8">
-				<div class="row">
-					<div class="col-2 pl-5"><i class="fas fa-user-circle"></i></div>
-					<div class="col-10 ">
-						<p>Mawar Melati</p>
-						<p style="color : #f1e046"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-								class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-						<p>Barangnya sudah sampai sangat bagus</p>
-					</div>
+			<div class="carousel-item active">
+				<div class="carousel-caption d-md-block">
+					<h1 class="carouselText">KOPI BERKUALITAS TINGGI</h1>
+					<button class="btn btn-success btn-carousel">Beli Sekarang</button>
 				</div>
+				<img class="d-block w-100" src="assets/img/carousel/carousel1.jpeg" alt="First slide">
 
-				<div class="row mt-3">
-					<div class="col-2 pl-5"><i class="fas fa-user-circle"></i></div>
-					<div class="col-10 ">
-						<p>Pelangi</p>
-						<p style="color : #f1e046"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-								class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-						<p>Cocok banget buat nemenin nyemil sore</p>
-					</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption d-md-block">
+					<h1 class="carouselText">KOPI BERKUALITAS TINGGI</h1>
+					<button class="btn btn-success btn-carousel">Beli Sekarang</button>
 				</div>
+				<img class="d-block w-100" src="assets/img/carousel/carousel1.jpeg" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption d-md-block">
+					<h1 class="carouselText">KOPI BERKUALITAS TINGGI</h1>
+					<button class="btn btn-success btn-carousel">Beli Sekarang</button>
+				</div>
+				<img class="d-block w-100" src="assets/img/carousel/carousel1.jpeg" alt="Third slide">
 			</div>
 		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
-	<!--End Ulasan Section-->
-	<hr style="background-color: #dad8d8d5; height : 20px;margin-bottom: 0;">
+	<!-- End Carousel Section -->
+
 	<!-- Start Container Produk Section -->
-	<div class="container produk-container">
-		<div class="row mt-0">
+
+	<div id="produk-section" class="container produk-container">
+		<div class="row">
 			<div class="col-12">
-				<h2 class="text-center produk-container-header" style="color: #388a6b;">Hanya Untuk Anda</h2>
+				<h5 class="produk-container-header">Makanan</h5>
+				<a href="#" class="float-right show-all">Lihat Semua</a>
 			</div>
 		</div>
 		<!-- Start Row-->
 		<center>
 			<div class="row mt-5">
+
 				<div class="col-lg-3 col-6 mx-auto">
 					<!-- Start Card -->
 					<div class="card shadow-lg">
 						<div class="card-image">
-							<img class="card-img-top" src="assets/img/produk/teh.jpeg" alt="Card image cap">
+							<img class="card-img-top" src="assets/img/produk/kripik.jpeg" alt="Card image cap">
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Indonesian Green Tea Latte</h5>
-							<p class="card-text">Rp 95.999</p>
+							<h5 class="card-title">Kerpik Teh Original</h5>
+							<p class="card-text">Rp 16.500</p>
 						</div>
-						<a href="detailproduk1.html" class="btn btn-success btn-show">Detail Produk</a>
+						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
 					</div>
 					<!-- End Card -->
 					<div class="row mt-5"></div>
@@ -269,7 +154,7 @@
 							<img class="card-img-top" src="assets/img/produk/kripik.jpeg" alt="Card image cap">
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Keripik Teh Original</h5>
+							<h5 class="card-title">Keripik Teh Coklat</h5>
 							<p class="card-text">Rp 18.500</p>
 						</div>
 						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
@@ -281,11 +166,91 @@
 					<!-- Start Card -->
 					<div class="card shadow-lg">
 						<div class="card-image">
-							<img class="card-img-top" src="assets/img/produk/teh.jpeg" alt="Card image cap">
+							<img class="card-img-top" src="assets/img/produk/kripik.jpeg" alt="Card image cap">
 						</div>
 						<div class="card-body">
-							<h5 class="card-title">Green Tea Latte</h5>
-							<p class="card-text">Rp 15.500</p>
+							<h5 class="card-title">Keripik Teh Coklat</h5>
+							<p class="card-text">Rp 18.500</p>
+						</div>
+						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5 "></div>
+				</div>
+				<div class="col-lg-3 col-6 ">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/kripik.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Keripik Teh Original</h5>
+							<p class="card-text">Rp 15.000</p>
+						</div>
+						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5"></div>
+				</div>
+
+			</div>
+		</center>
+		<!-- End Row-->
+	</div>
+	<!-- End Container Produk Section -->
+
+	<!-- Start Container Produk Section -->
+
+	<div class="container produk-container">
+		<div class="row">
+			<div class="col-12">
+				<h5 class="produk-container-header">Olahan Kopi</h5>
+				<a href="#" class="float-right show-all">Lihat Semua</a>
+			</div>
+		</div>
+		<!-- Start Row-->
+		<center>
+			<div class="row mt-5">
+
+				<div class="col-lg-3 col-6 mx-auto">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/kopi.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Kopi Kerkh Ven 100% Roasted Arabica</h5>
+							<p class="card-text">Rp 95.999</p>
+						</div>
+						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5"></div>
+				</div>
+				<div class="col-lg-3 col-6 ">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/kopi.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Kopi Kerkh Ven 100% Roasted Arabica</h5>
+							<p class="card-text">Rp 40.500</p>
+						</div>
+						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5"></div>
+				</div>
+				<div class="col-lg-3 col-6 ">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/kopi.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Kopi Kerkh Ven 100% Roasted Arabica</h5>
+							<p class="card-text">Rp 35.500</p>
 						</div>
 						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
 					</div>
@@ -312,9 +277,88 @@
 		</center>
 		<!-- End Row-->
 	</div>
-
 	<!-- End Container Produk Section -->
-	<hr style="background-color: #dad8d8d5; height : 20px;margin-bottom: 0;">
+	<!-- Start Container Produk Section -->
+
+	<div class="container produk-container">
+		<div class="row">
+			<div class="col-12">
+				<h5 class="produk-container-header">Olahan Teh</h5>
+				<a href="#" class="float-right show-all">Lihat Semua</a>
+			</div>
+		</div>
+		<!-- Start Row-->
+		<center>
+			<div class="row mt-5">
+
+				<div class="col-lg-3 col-6 mx-auto">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/teh.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Indonesian Green Tea Latte</h5>
+							<p class="card-text">Rp 95.999</p>
+						</div>
+						<a href="detailproduk1.html" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5"></div>
+				</div>
+				<div class="col-lg-3 col-6 ">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/teh.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Green Tea Latte</h5>
+							<p class="card-text">Rp 40.500</p>
+						</div>
+						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5"></div>
+				</div>
+				<div class="col-lg-3 col-6 ">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/teh.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Indonesian Green Tea Latte</h5>
+							<p class="card-text">Rp 35.500</p>
+						</div>
+						<a href="detailproduk1.html" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5 "></div>
+				</div>
+				<div class="col-lg-3 col-6 ">
+					<!-- Start Card -->
+					<div class="card shadow-lg">
+						<div class="card-image">
+							<img class="card-img-top" src="assets/img/produk/teh.jpeg" alt="Card image cap">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Greeen Tea Latte</h5>
+							<p class="card-text">Rp 40.000</p>
+						</div>
+						<a href="#" class="btn btn-success btn-show">Detail Produk</a>
+					</div>
+					<!-- End Card -->
+					<div class="row mt-5"></div>
+				</div>
+
+			</div>
+		</center>
+		<!-- End Row-->
+	</div>
+	<!-- End Container Produk Section -->
+
+	<!--Start Footer-->
 	<footer class="page-footer font-small unique-color-dark" style="border-top : 1px #3a9070 solid">
 
 		<!-- Footer Links -->
@@ -390,17 +434,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script async defer src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-	<script>
-		$(document).ready(function() {
-			$('.btnbeli').click(function() {
-				Swal.fire('Berhasil',
-					'Item Berhasil ditambahkan ke keranjang',
-					'success');
-			});
-		})
 
-	</script>
 </body>
 
 </html>
