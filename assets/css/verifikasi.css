@@ -1,0 +1,36 @@
+@media only screen and (min-width: 600px) {
+	.regist-box {
+		width: 30vw;
+	}
+
+}
+
+body {
+	background: url('./assets/img/bg/bgregist.jpeg');
+	background-repeat: no-repeat;
+}
+
+label {
+	font-weight: bold;
+}
+
+.regist-box .btn-daftar {
+	width: 100%;
+	background-color: #2b2a2a;
+	color: white;
+	font-weight: 600;
+}
+
+.regist-box .btn-login {
+	width: 100%;
+	background-color: #3a9070;
+	color: white;
+	font-weight: 600;
+}
+
+.regist-box {
+	background-color: #ffffff;
+	border-radius: 50px;
+
+
+}

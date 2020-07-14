@@ -44,3 +44,22 @@ html {
 	opacity: 1;
 
 }
+
+.modal-body .badge-alamat {
+	background-color: rgb(164, 236, 164);
+	color: rgb(3, 70, 3);
+
+}
+
+.modal-body .ubah-alamat {
+	color: green;
+	text-shadow: 1px 1px 1px rgb(202, 202, 202);
+}
+
+
+.modal-body .btn-tambah-alamat {
+	height: 80px;
+	width: 100%;
+	margin: auto;
+	font-size: 20px;
+}
