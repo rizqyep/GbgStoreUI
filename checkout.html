@@ -214,7 +214,7 @@
 			<!--End Left Side Section-->
 			<!--Start Right Side Section-->
 			<div class="col-lg-6 mt-3">
-				<div class="container shadow pt-4 pl-4 pr-2 pb-5" style="background-color : #ffffff;">
+				<div class="container shadow pt-4 pl-4 pr-4 pb-5" style="background-color : #ffffff;">
 					<p class="font-weight-bold">Jika anda memiliki kode voucher silahkan masukkan dibawah ini</p>
 					<div class="input-group">
 						<input type="text" placeholder="Kode voucher anda" class="form-control">
@@ -232,8 +232,11 @@
 						<span class="float-right">Rp.26.000</span></p>
 					<p>Total Tagihan
 						<span class="float-right harga">Rp.60.000</span></p>
-					<button class="btn btn-orange" data-toggle="modal" data-target="#metodeBayarModal">Bayar
+					<button class="btn btn-orange" id="btnBayarFinal" data-toggle="modal"
+						data-target="#metodeBayarModal">Bayar
 						Sekarang</button>
+					<a href="verifikasi-bayar.html" class="btn btn-orange mt-4" id="verifikasiBayar">Verifikasi
+						Pembayaran</a href="verifikasi-bayar.html">
 				</div>
 			</div>
 			<!--End Right Side Section-->
@@ -487,7 +490,7 @@
 						</li>
 					</ul>
 					<center>
-						<button class="mt-3 btn btn-success text-center font-weight-bold"
+						<button class="mt-3 btn btn-success btnBayarSekarang text-center font-weight-bold"
 							style="width :100%; border-radius : 10px;">Bayar</button>
 					</center>
 				</div>
@@ -544,7 +547,7 @@
 						</li>
 					</ul>
 					<center>
-						<button class="mt-3 btn btn-success text-center font-weight-bold"
+						<button class="mt-3 btn btn-success btnBayarSekarang text-center font-weight-bold"
 							style="width :100%; border-radius : 10px;">Bayar</button>
 					</center>
 				</div>
@@ -712,7 +715,7 @@
 
 					</ul>
 					<center>
-						<button class="mt-3 btn btn-success text-center font-weight-bold"
+						<button class="mt-3 btn btn-success btnBayarSekarang text-center font-weight-bold"
 							style="width :100%; border-radius : 10px;">Bayar</button>
 					</center>
 				</div>
@@ -727,11 +730,21 @@
 	</script>
 	<script async defer src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 	<script>
+		window.onload = function() {
+			$('#verifikasiBayar').hide();
+		}
 		$(document).ready(function() {
 			$('#tambahAlamatbtn').click(function() {
 				Swal.fire('Berhasil',
 					'Alamat berhasil ditambahkan !',
 					'success');
+			});
+			$('.btnBayarSekarang').click(function() {
+				Swal.fire('Berhasil Memilih Metode',
+					'Silahkan Lakukan verifikasi pembayaran',
+					'success');
+				$('#verifikasiBayar').show();
+				$('#btnBayarFinal').text('Ubah Metode Pembayaran');
 			});
 		})
 
