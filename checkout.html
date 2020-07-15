@@ -232,7 +232,8 @@
 						<span class="float-right">Rp.26.000</span></p>
 					<p>Total Tagihan
 						<span class="float-right harga">Rp.60.000</span></p>
-					<button class="btn btn-orange">Bayar Sekarang</button>
+					<button class="btn btn-orange" data-toggle="modal" data-target="#metodeBayarModal">Bayar
+						Sekarang</button>
 				</div>
 			</div>
 			<!--End Right Side Section-->
@@ -241,7 +242,7 @@
 
 	<!--Alamat Modal Section-->
 	<div class="modal" tabindex="-1" role="dialog" id="alamatModal">
-		<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -249,10 +250,11 @@
 					</button>
 				</div>
 				<div class="modal-body">
-
 					<h4 class="modal-title text-center mb-3">Pilih Alamat Pengiriman</h4>
 					<center>
-						<button class="btn btn-success btn-tambah-alamat font-weight-bold">Tambah Alamat Baru</button>
+						<a data-toggle="modal" href="#tambahAlamatModal"
+							class="btn btn-success btn-tambah-alamat font-weight-bold pt-4">Tambah
+							Alamat Baru</a>
 					</center>
 					<div class="container shadow pl-3 pr-3 mt-4 pt-3 pb-3" style="border : solid 1px grey;">
 						<p class="nama-user">
@@ -280,9 +282,459 @@
 		</div>
 	</div>
 	<!-- End Alamat Modal-->
+	<!-- Tambah Alamat Modal Section-->
+	<div class="modal" tabindex="-1" role="dialog" id="tambahAlamatModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center mb-3">Tambah Alamat</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="form-group">
+							<label for="label-alamat">Label alamat</label>
+							<input id="label-alamat" type="text" class="form-control"
+								placeholder="Contoh rumah, kos atau lainnya" required>
+						</div>
+						<div class="row mb-3">
+							<div class="col-6">
+								<label for="nama-penerima">Nama Penerima</label>
+								<input id="nama-penerima" type="text" class="form-control top" name="nama-penerima"
+									placeholder="Nama penerima" required>
+							</div>
+							<div class="col-6">
+								<label for="notel">Nomor Telepon</label>
+								<input id="notel" type="text" class="form-control top" name="notel"
+									placeholder="Nomor Telepon">
+							</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-6">
+								<div class="form-group">
+									<label for="provinsi">Provinsi</label>
+									<select id="provinsi" type="date" class="form-control">
+										<option value="">Pilih Provinsi</option>
+										<option value="">DKI Jakarta</option>
+										<option value="">Jawa Barat</option>
+										<option value="">Jawa Timur</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="kota">Kota</label>
+									<select id="kota" type="date" class="form-control">
+										<option value="">Pilih Kota</option>
+										<option value="">Jakarta</option>
+										<option value="">Bandung</option>
+										<option value="">Surabaya</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row mb-3">
+							<div class="col-6">
+								<label for="kecamatan">Kecamatan</label>
+								<input id="kecamatan" type="text" class="form-control top" name="kecamatan"
+									placeholder="Kecamatan" required>
+							</div>
+							<div class="col-6">
+								<label for="kodepos">Kode Pos</label>
+								<input id="kodepos" type="text" class="form-control top" name="kodepos"
+									placeholder="Kode Pos" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="alamat">Alamat</label>
+							<textarea name="" class="form-control" cols="20" rows="3" required>Alamat</textarea>
+						</div>
+					</form>
+					<div class="input-group">
+						<input type="checkbox" class="mt-1">
+						<div class="input-group-append">
+							<span class="ml-2">Jadikan sebagai alamat utama</span>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a data-dismiss="modal" class="btn btn-daftar mt-2 font-weight bold"
+						style="color : green;">Kembali</a>
+					<button class="btn btn-success font-weight-bold" id="tambahAlamatbtn">Tambahkan Alamat</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Tambah Alamat Modal-->
+
+	<!--Metode Pembayaran Modal Section-->
+	<div class="modal" tabindex="-1" role="dialog" id="metodeBayarModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Metode Pembayaran</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul class="list-group">
+						<a data-toggle="modal" href="#jiCashModal" style="text-decoration: none;">
+							<li class="list-group-item  pt-2 pb-2">
+
+								<div class="row">
+									<div class="col-2 pt-2 pr-1">
+										<img src="assets/img/logo/other/jicash.png" height=40 alt="">
+									</div>
+									<div class="col-10">
+										<p class="font-weight-bold text-muted">Ji-Cash</p>
+										<p class="text-muted">Bayar melalui Ji-Cash</p>
+									</div>
+								</div>
+							</li>
+						</a>
+						<a data-toggle="modal" href="#gambungStoreModal" style="text-decoration: none;">
+							<li class="list-group-item  pt-2 pb-2">
+								<div class="row">
+									<div class="col-2 pt-2 pr-1">
+										<i class="fas text-muted fa-credit-card" style="font-size: 40px;"></i>
+									</div>
+									<div class="col-10">
+										<p class="font-weight-bold text-muted">Gambung Store</p>
+										<p class="text-muted">Perlu upload bukti pembayaran</p>
+									</div>
+								</div>
+							</li>
+						</a>
+						<a data-toggle="modal" href="#atmModal" style="text-decoration: none;">
+							<li class="list-group-item  pt-2 pb-2">
+								<div class="row">
+									<div class="col-2 pt-2 pr-1">
+										<img src="assets/img/logo/other/x-10-512.png" height=40 alt="">
+									</div>
+									<div class="col-10">
+										<p class="font-weight-bold text-muted">Digital Payment</p>
+										<p class="text-muted">Tidak perlu upload bukti transfer/bukti pembayaran</p>
+									</div>
+								</div>
+							</li>
+						</a>
+
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Metode Bayar Modal-->
+	<!--Ji Cash Modal Section-->
+	<div class="modal" tabindex="-1" role="dialog" id="jiCashModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+			<div class="modal-content">
+				<div class="ji-cash header">
+					<div class="row mt-3">
+						<div class="col-2">
+							<a data-dismiss="modal" href="">
+								<i class="fas fa-arrow-left ml-3 text-muted font-weight-bold"></i>
+							</a>
+						</div>
+						<div class="col-6">
+							<p class="font-weight-bold text-muted">
+								Metode Pembayaran
+							</p>
+						</div>
+						<div class="col-3">
+							<p class="float-right font-weight-bold text-muted">Ji-Cash</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item  pt-2 pb-2">
+							<div class="row">
+								<div class="col-2 pt-2 pr-1">
+									<img src="assets/img/logo/other/jicash.png" height=40 alt="">
+								</div>
+								<div class="col-10">
+									<p class="font-weight-bold">Saldo Ji-Cash</p>
+									<p class="text-muted">Rp.100.000</p>
+								</div>
+							</div>
+						</li>
+						<li class="list-group-item  pt-2 pb-2">
+							<p class="font-weight-bold">Ringkasan Pembayaran</p>
+							<div class="row">
+								<div class="col-6">Total Tagihan</div>
+								<div class="col-6"><span class="float-right">Rp.60.000</span></div>
+							</div>
+							<div class="row">
+								<div class="col-6">Ji Cash Terpakai</div>
+								<div class="col-6"><span class="float-right">Rp.60.000</span></div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<p class="font-weight-bold">Total Bayar</p>
+								</div>
+								<div class="col-6"><span class="font-weight-bold float-right">Rp.60.000</span></div>
+							</div>
+						</li>
+					</ul>
+					<center>
+						<button class="mt-3 btn btn-success text-center font-weight-bold"
+							style="width :100%; border-radius : 10px;">Bayar</button>
+					</center>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Ji Cash Modal-->
+	<!--Gambung Store Modal Section-->
+	<div class="modal" tabindex="-1" role="dialog" id="gambungStoreModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+			<div class="modal-content">
+				<div class="ji-cash header">
+					<div class="row mt-3">
+						<div class="col-2">
+							<a data-dismiss="modal" href="">
+								<i class="fas fa-arrow-left ml-3 text-muted font-weight-bold"></i>
+							</a>
+						</div>
+						<div class="col-6">
+							<p class="font-weight-bold text-muted">
+								Metode Pembayaran
+							</p>
+						</div>
+						<div class="col-3">
+							<p class="float-right font-weight-bold text-muted">Gambung Store</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item  pt-2 pb-2">
+							<div class="row">
+								<div class="col-8">
+									<h5 class="font-weight-bold">Jumlah Pembayaran</h5>
+								</div>
+								<div class="col-4">
+
+									<h4 class="font-weight-bold float-right">Rp.60.000</h4>
+								</div>
+							</div>
+						</li>
+						<li class="list-group-item shadow container mt-2 pt-2 pb-2">
+							<p>Gunakan ATM / i-Banking / m-Banking / Setor Tunai untuk transfer ke rekening Gambung
+								Store</p>
+							<p class="font-weight-bold">Nomor Rekening : 1110005821321</p>
+							<p class="font-weight-bold">Nama Rekening : Bumdes Pakis Sabibulungan</p>
+						</li>
+						<li class="list-group-item shadow container mt-3 pt-2 pb-2">
+							<p class="font-weight-bold">Harap selesaikan dan verifikasi pembayaran sebelum</p>
+							<h5 class="font-weight-bold">20 Juli 2020 12:30 WIB</h5>
+						</li>
+					</ul>
+					<center>
+						<button class="mt-3 btn btn-success text-center font-weight-bold"
+							style="width :100%; border-radius : 10px;">Bayar</button>
+					</center>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Gambung Store Modal-->
+	<!--ATM Modal Section-->
+	<div class="modal" tabindex="-1" role="dialog" id="atmModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+			<div class="modal-content">
+				<div class="ji-cash header">
+					<div class="row mt-3">
+						<div class="col-2">
+							<a data-dismiss="modal" href="">
+								<i class="fas fa-arrow-left ml-3 text-muted font-weight-bold"></i>
+							</a>
+						</div>
+						<div class="col-5">
+							<p class="font-weight-bold text-muted">
+								Metode Pembayaran
+							</p>
+						</div>
+						<div class="col-4">
+							<p class="float-right font-weight-bold text-muted">Digital Payment</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body">
+					<ul class="list-group">
+						<a data-toggle="modal" href="#" style="text-decoration: none;">
+							<li class="list-group-item  pt-2 pb-2">
+
+								<div class="row">
+									<div class="col-2 pt-2 pr-1">
+										<img src="assets/img/logo/other/bca.png" height=50 alt="">
+									</div>
+									<div class="col-10">
+										<p class="font-weight-bold text-muted">BCA</p>
+										<p class="text-muted">Bayar melalui ATM atau m-banking</p>
+									</div>
+								</div>
+							</li>
+						</a>
+
+						<a data-toggle="modal" href="#" style="text-decoration: none;">
+							<li class="list-group-item  pt-2 pb-2">
+
+								<div class="row">
+									<div class="col-2 pt-2 pr-1">
+										<img src="assets/img/logo/other/mandiri.png" height=50 alt="">
+									</div>
+									<div class="col-10">
+										<p class="font-weight-bold text-muted">Mandiri</p>
+										<p class="text-muted">Bayar melalui ATM atau m-banking</p>
+									</div>
+								</div>
+							</li>
+						</a>
+
+						<a data-toggle="modal" href="#" style="text-decoration: none;">
+							<li class="list-group-item  pt-2 pb-2">
+
+								<div class="row">
+									<div class="col-2 pt-2 pr-1">
+										<img src="assets/img/logo/other/bni.png" height=50 alt="">
+									</div>
+									<div class="col-10">
+										<p class="font-weight-bold text-muted">BNI</p>
+										<p class="text-muted">Bayar melalui ATM atau m-banking</p>
+									</div>
+								</div>
+							</li>
+						</a>
+						<a data-toggle="modal" href="#permataAtmModal" style="text-decoration: none;">
+							<li class="list-group-item  pt-2 pb-2">
+
+								<div class="row">
+									<div class="col-2 pt-2 pr-1">
+										<img src="assets/img/logo/other/bankpermata.png" height=50 alt="">
+									</div>
+									<div class="col-10">
+										<p class="font-weight-bold text-muted">Permata</p>
+										<p class="text-muted">Bayar melalui ATM atau m-banking</p>
+									</div>
+								</div>
+							</li>
+						</a>
+
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End ATM Modal-->
+
+	<!--Permata ATM Modal Section-->
+	<div class="modal" tabindex="-1" role="dialog" id="permataAtmModal">
+		<div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+			<div class="modal-content">
+				<div class="ji-cash header">
+					<div class="row mt-3">
+						<div class="col-2">
+							<a data-dismiss="modal" href="">
+								<i class="fas fa-arrow-left ml-3 text-muted font-weight-bold"></i>
+							</a>
+						</div>
+						<div class="col-6">
+							<p class="font-weight-bold text-muted">
+								Metode Pembayaran
+							</p>
+						</div>
+						<div class="col-3">
+							<p class="float-right font-weight-bold text-muted">Permata ATM</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item  pt-2 pb-2">
+							<div class="row">
+								<div class="col-8">
+									<h5 class="font-weight-bold">Jumlah Pembayaran</h5>
+								</div>
+								<div class="col-4">
+
+									<h4 class="font-weight-bold float-right">Rp.60.000</h4>
+								</div>
+							</div>
+						</li>
+						<div class="alert alert-primary mt-3 mb-3">
+							<p class="font-weight-bold text-muted">Harap selesaikan dan verifikasi pembayaran sebelum
+							</p>
+							<h5 class="font-weight-bold text-dark">20 Juli 2020 12:30 WIB</h5>
+						</div>
+						<li class="list-group-item  pt-2 pb-2">
+							<div class="row">
+								<div class="col-8">
+									<h5 class="font-weight-bold">No.Rekening</h5>
+								</div>
+								<div class="col-4">
+									<h4 class="font-weight-bold float-right">0308765956</h4>
+								</div>
+							</div>
+						</li>
+						<div class="container shadow mt-2 pt-2 pb-2">
+							<h5>Cara Pembayaran</h5>
+							<p>1. Pada menu utama , pilih <span class="font-weight-bold">Transaksi Lainnya</span><br>
+								2. Pilih <span class="font-weight-bold">Pembayaran</span><br>
+								3. Pilih <span class="font-weight-bold">Pembayaran Lainnya</span><br>
+								4. Pilih <span class="font-weight-bold"> Virtual Account</span><br>
+								5. Masukkan nomor <span class="font-weight-bold">VIRTUAL ACCOUNT</span> yang tertera
+								pada halaman konfirmasi dan tekan <span class="font-weight-bold">BENAR</span><br>
+								6. Pilih rekening yang menjadi sumber dana , lalu tekan <span
+									class="font-weight-bold">YA</span> untuk konfirmasi transaksi
+							</p>
+						</div>
+
+
+
+					</ul>
+					<center>
+						<button class="mt-3 btn btn-success text-center font-weight-bold"
+							style="width :100%; border-radius : 10px;">Bayar</button>
+					</center>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Permata ATM Modal-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script async="async" defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+	</script>
+	<script async defer src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script>
+		$(document).ready(function() {
+			$('#tambahAlamatbtn').click(function() {
+				Swal.fire('Berhasil',
+					'Alamat berhasil ditambahkan !',
+					'success');
+			});
+		})
+
 	</script>
 
 </body>
