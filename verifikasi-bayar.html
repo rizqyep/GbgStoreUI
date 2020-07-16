@@ -23,6 +23,103 @@
 </head>
 
 <body>
+	<!-- Start Navbar Section -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+
+		<a class="navbar-brand d-none d-lg-block" href="index.html"><img class="navLogo"
+				src="assets/img/logo/Logo Gambung.png"></a>
+
+		<div class="dropdown show">
+			<a class="navbar-toggler" href="#" role="button" id="dropdownMobile" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false" style="border : none; outline : none;">
+				<i class="navbar-toggler-icon"></i>
+			</a>
+			<div class="dropdown-menu pb-3 bg-dark" style="width : 220px;" aria-labelledby="dropdownMobile">
+				<a href="index.html"> <img class="mt-2 ml-3" src="assets/img/logo/logotrans.png" height=50 alt="">
+				</a>
+				<a class="dropdown-item text-white mt-3" href="#">Edit Profile <i
+						class="fas fa-user-circle float-right mt-1"></i></a>
+				<a class="dropdown-item text-white mt-3" href="transaksi.html">Transaksi</a>
+				<a class="dropdown-item text-white mt-3" href="cart.html">Cart <i
+						class="fas fa-shopping-cart float-right mt-1"></i></a>
+				<a class="dropdown-item text-white mt-3" href="wishlist.html">Wishlist<i
+						class="fas fa-heart float-right mt-1"></i></a>
+				<a class="dropdown-item text-white mt-3" href="checkout.html">Checkout</a>
+				<a class="dropdown-item text-white mt-3" href="#">Chat <i
+						class="fas fa-comments float-right mt-1"></i></a>
+				<hr class="bg-light"><a class="dropdown-item text-white mt-3" href="#">Log Out <i
+						class="fas fa-power-off float-right mt-1"></i></a>
+			</div>
+		</div>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active d-none d-lg-block">
+				<a class="nav-link" href="produk.html">Produk</a>
+			</li>
+			<li class="nav-item active d-none d-lg-block">
+				<a class="nav-link" href="#">Kontak Kami</a>
+			</li>
+		</ul>
+		<div class="input-group ">
+			<input type="text" class="form-control" placeholder="Cari Produk">
+			<div class="input-group-append">
+				<button class="btn btn-success" type="submit"><i class="ui search icon"></i></button>
+			</div>
+		</div>
+
+		<div class="phone-nav d-lg-none mt-2">
+			<p>
+				<a class="nav-icon" href="cart.html"><i class="fas fa-shopping-cart mr-3"></i></a>
+
+				<a class="nav-icon" href="#"><i class="fas fa-bell mr-3"></i></a>
+
+				<a class="nav-icon" href="#"><i class="fas fa-user-circle mr-3"></i></a>
+			</p>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<span class="d-none d-lg-block">
+				<ul class="navbar-nav ml-auto pl-0">
+					<li class="nav-item active">
+						<a class="nav-link mr-3" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link mr-3" href="#"><i class="fas fa-bell "></i></a>
+					</li>
+					<li class="nav-item active" style="border-right: solid 1px grey;">
+						<a class="nav-link mr-3" href="#"><i class="fas fa-envelope"></i></a>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown show">
+							<a class="nav-link ml-2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-user-circle mr-2"></i>Aditya
+								Kusumadhinata
+							</a>
+
+							<div class="dropdown-menu pb-3 bg-dark" style="width : 220px;"
+								aria-labelledby=" dropdownMenuLink">
+								<a class="dropdown-item text-white mt-3" href="#">Edit Profile <i
+										class="fas fa-user-circle float-right mt-1"></i></a>
+								<a class="dropdown-item text-white mt-3" href="transaksi.html">Transaksi</a>
+								<a class="dropdown-item text-white mt-3" href="cart.html">Cart <i
+										class="fas fa-shopping-cart float-right mt-1"></i></a>
+								<a class="dropdown-item text-white mt-3" href="wishlist.html">Wishlist <i
+										class="fas fa-heart float-right mt-1"></i></a>
+								<a class="dropdown-item text-white mt-3" href="checkout.html">Checkout</a>
+								<a class="dropdown-item text-white mt-3" href="#">Chat <i
+										class="fas fa-comments float-right mt-1"></i></a>
+								<hr class="bg-light"><a class="dropdown-item text-white mt-3" href="#">Log Out <i
+										class="fas fa-power-off float-right mt-1"></i></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</span>
+
+		</div>
+
+	</nav>
+
+	<!-- End Navbar Section -->
 	<div class="container shadow mt-5 mb-5 pl-5 pr-5 pt-3 pb-3" style="border-radius : 20px">
 		<center>
 			<h5 class="font-weight-bold">Verifikasi Pembayaran</h5>
