@@ -183,7 +183,8 @@
 					</div>
 					<div class="col-lg-2"></div>
 					<div class="col-lg-6">
-						<button class=" btn btn-secondary"><i class="fas fa-share mr-2"></i>Share</button>
+						<button class=" btn btn-secondary" data-toggle="modal" data-target="#shareModal"><i
+								class="fas fa-share mr-2"></i>Share</button>
 						<button class=" btn btn-light btnbeli text-center"
 							style="width : 50px; border : 1px solid black;"><i
 								class="fas fa-shopping-cart"></i></button>
@@ -355,6 +356,34 @@
 
 	<!-- End Container Produk Section -->
 	<hr style="background-color: #dad8d8d5; height : 20px;margin-bottom: 0;">
+
+	<!-- Start Share Modal-->
+	<!-- Modal -->
+	<div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body mb-3">
+					<div class="share-header mt-2 mb-5">
+						<button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<center>
+							<h5 class="font-weight-bold">Share Menggunakan</h5>
+						</center>
+
+					</div>
+
+					<center>
+						<i class="fab fa-facebook-f mr-3" style="font-size : 40px;"></i>
+						<i class="fab fa-instagram mr-3" style="font-size : 40px;"></i>
+						<i class="fab fa-twitter mr-3" style="font-size : 40px;"></i>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Share Modal-->
 	<footer class="page-footer font-small unique-color-dark" style="border-top : 1px #3a9070 solid">
 
 		<!-- Footer Links -->
