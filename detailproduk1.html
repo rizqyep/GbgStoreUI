@@ -70,25 +70,37 @@
 		</div>
 
 		<div class="phone-nav d-lg-none mt-2">
-			<p>
-				<a class="nav-icon" href="cart.html"><i class="fas fa-shopping-cart mr-3"></i></a>
+			<div class="row">
+				<div class="wrapper" style="position:relative ;">
+					<a class="nav-link mr-1 mt-1" href="cart.html"><i class="fas fa-shopping-cart text-dark"></i></a>
+					<span class="font-weight-bold text-center" id="cartNumberPhone"
+						style="border-radius : 3px;position:absolute;top: 4px;right:15px;width: 12px; height : 15px; font-size : 10px; background-color: red;color :white;">
+						0 </span>
+				</div>
 
-				<a class="nav-icon" href="#"><i class="fas fa-bell mr-3"></i></a>
+				<a class="nav-icon" href="#"><i class="fas fa-bell text-dark mr-3 mt-3"></i></a>
 
-				<a class="nav-icon" href="#"><i class="fas fa-user-circle mr-3"></i></a>
-			</p>
+				<a class="nav-icon" href="#"><i class="fas fa-user-circle text-dark mr-3 mt-3"></i></a>
+			</div>
 		</div>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<span class="d-none d-lg-block">
 				<ul class="navbar-nav ml-auto pl-0">
 					<li class="nav-item active">
-						<a class="nav-link mr-3" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+						<div class="wrapper" style="position:relative">
+							<a class="nav-link mr-3" href="cart.html"><i class="fas fa-shopping-cart text-dark"></i></a>
+
+							<span class="font-weight-bold text-center" id="cartNumberPc"
+								style="border-radius : 3px;position:absolute;top: 3px;right:15px;width: 12px; height : 15px; font-size : 10px; background-color: red;color :white;">
+								0 </span>
+						</div>
+
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link mr-3" href="#"><i class="fas fa-bell "></i></a>
+						<a class="nav-link mr-3" href="#"><i class="fas fa-bell text-dark "></i></a>
 					</li>
 					<li class="nav-item active" style="border-right: solid 1px grey;">
-						<a class="nav-link mr-3" href="#"><i class="fas fa-envelope"></i></a>
+						<a class="nav-link mr-3" href="#"><i class="fas fa-envelope text-dark"></i></a>
 					</li>
 					<li class="nav-item">
 						<div class="dropdown show">
@@ -121,7 +133,6 @@
 		</div>
 
 	</nav>
-
 	<!-- End Navbar Section -->
 	<div class="container detail-container">
 		<div class="row mt-5">
@@ -186,8 +197,8 @@
 						<button class=" btn btn-secondary" data-toggle="modal" data-target="#shareModal"><i
 								class="fas fa-share mr-2"></i>Share</button>
 						<button class=" btn btn-light btnbeli text-center"
-							style="width : 50px; border : 1px solid black;"><i
-								class="fas fa-shopping-cart"></i></button>
+							style="width : 50px; border : 1px solid black;"><i class="fas fa-shopping-cart"
+								id="cartBtn"></i></button>
 						<a href="cart.html" class="btn btn-danger">Beli Sekarang</a>
 					</div>
 				</div>
@@ -462,11 +473,16 @@
 	<script async defer src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 	<script>
 		$(document).ready(function() {
+			var cartNum = 0;
 			$('.btnbeli').click(function() {
 				Swal.fire('Berhasil',
 					'Item Berhasil ditambahkan ke keranjang',
 					'success');
+				cartNum += 1;
+				document.getElementById('cartNumberPhone').innerHTML = cartNum;
+				document.getElementById('cartNumberPc').innerHTML = cartNum;
 			});
+
 		})
 
 	</script>
