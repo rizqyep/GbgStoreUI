@@ -64,8 +64,12 @@
 
 		<div class="phone-nav d-lg-none mt-2">
 			<p>
-				<a class="nav-icon" href="cart.html"><i class="fas fa-shopping-cart mr-3"></i></a>
-
+				<div class="wrapper" style="position:relative ;">
+					<a class="nav-link mr-1 mt-1" href="cart.html"><i class="fas fa-shopping-cart text-dark"></i></a>
+					<span class="font-weight-bold text-center" id="cartNumberPhone"
+						style="border-radius : 3px;position:absolute;top: 4px;right:15px;width: 12px; height : 15px; font-size : 10px; background-color: red;color :white;">
+						3 </span>
+				</div>
 				<a class="nav-icon" href="#"><i class="fas fa-bell mr-3"></i></a>
 
 				<a class="nav-icon" href="#"><i class="fas fa-user-circle mr-3"></i></a>
@@ -78,9 +82,9 @@
 						<div class="wrapper" style="position:relative">
 							<a class="nav-link mr-3" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
 
-							<span class="font-weight-bold text-center"
+							<span class="font-weight-bold text-center" id="cartNumberPc"
 								style="border-radius : 3px;position:absolute;top: 3px;right:15px;width: 12px; height : 15px; font-size : 10px; background-color: red;color :white;">
-								0 </span>
+								3 </span>
 						</div>
 
 					</li>
@@ -127,8 +131,9 @@
 		<div class="row">
 
 			<div class="col-lg-8">
-				<div class="container cart-item shadow pt-4 pb-5 pl-4 pr-3 mt-3">
-					<button class="btn btncheck float-right"><i class="fas fa-check-circle"></i></button>
+				<div class="container cart-item shadow pt-4 pb-5 pl-4 pr-3 mt-3" id="cartItem1">
+					<button class="btn btncheck float-right" id="btnchecklist1"><i
+							class="fas fa-check-circle"></i></button>
 					<h5 class="font-weight-bold">Gambung Store</h5>
 					<p><i class="fas fa-map-marker-alt mr-2"></i>Bandung</p>
 					<div class="row">
@@ -141,14 +146,16 @@
 							<div class="row">
 								<div class="col-8 mt-2">
 									<span class="d-inline amount">
-										<button class="btn btn-success btn-sm text-center btn-amount">-</button>
-										<input type="text" class="form-amount">
-										<button class="btn btn-success btn-sm text-center btn-amount">+</button>
+										<button class="btn btn-success btn-sm text-center btn-amount"
+											id="minBtn1">-</button>
+										<input type="text" class="form-amount text-center" id="amountInput1" value="0">
+										<button class="btn btn-success btn-sm text-center btn-amount"
+											id="plsBtn1">+</button>
 									</span>
 								</div>
 
 								<div class="col-4 mt-2">
-									<i style="color : red" class="fas fa-trash btnhapus"></i>
+									<i style="color : red" class="fas fa-trash btnhapus" id="btnDel1"></i>
 								</div>
 							</div>
 						</div>
@@ -156,8 +163,9 @@
 							class="mt-3 ml-3 pesan-form">
 					</div>
 				</div>
-				<div class="container cart-item shadow pt-4 pb-5 pl-4 pr-3 mt-3">
-					<button class="btn btncheck float-right"><i class="fas fa-check-circle"></i></button>
+				<div class="container cart-item shadow pt-4 pb-5 pl-4 pr-3 mt-3" id="cartItem2">
+					<button class="btn btncheck float-right" id="btnchecklist2"><i
+							class="fas fa-check-circle"></i></button>
 					<h5 class="font-weight-bold">Gambung Store</h5>
 					<p><i class="fas fa-map-marker-alt mr-2"></i>Bandung</p>
 					<div class="row">
@@ -170,13 +178,15 @@
 							<div class="row">
 								<div class="col-8 mt-2">
 									<span class="d-inline amount">
-										<button class="btn btn-success btn-sm text-center btn-amount">-</button>
-										<input type="text" class="form-amount">
-										<button class="btn btn-success btn-sm text-center btn-amount">+</button>
+										<button class="btn btn-success btn-sm text-center btn-amount"
+											id="minBtn2">-</button>
+										<input type="text" class="form-amount text-center" id="amountInput2" value="0">
+										<button class="btn btn-success btn-sm text-center btn-amount"
+											id="plsBtn2">+</button>
 									</span>
 								</div>
 								<div class="col-4 mt-2">
-									<i style="color : red" class="fas fa-trash btnhapus"></i>
+									<i style="color : red" class="fas fa-trash btnhapus" id="btnDel2"></i>
 								</div>
 							</div>
 						</div>
@@ -184,8 +194,9 @@
 							class="mt-3 ml-3 pesan-form">
 					</div>
 				</div>
-				<div class="container cart-item shadow pt-4 pb-5 pl-4 pr-3 mt-3">
-					<button class="btn btncheck float-right"><i class="fas fa-check-circle"></i></button>
+				<div class="container cart-item shadow pt-4 pb-5 pl-4 pr-3 mt-3" id="cartItem3">
+					<button class="btn btncheck float-right" id="btnchecklist3"><i
+							class="fas fa-check-circle"></i></button>
 					<h5 class="font-weight-bold">Gambung Store</h5>
 					<p><i class="fas fa-map-marker-alt mr-2"></i>Bandung</p>
 					<div class="row">
@@ -198,13 +209,15 @@
 							<div class="row">
 								<div class="col-8 mt-2">
 									<span class="d-inline amount">
-										<button class="btn btn-success btn-sm text-center btn-amount">-</button>
-										<input type="text" class="form-amount">
-										<button class="btn btn-success btn-sm text-center btn-amount">+</button>
+										<button class="btn btn-success btn-sm text-center btn-amount"
+											id="minBtn3">-</button>
+										<input type="text" class="form-amount text-center" id="amountInput3">
+										<button class="btn btn-success btn-sm text-center btn-amount"
+											id="plsBtn3">+</button>
 									</span>
 								</div>
 								<div class="col-4 mt-2">
-									<i style="color : red" class="fas fa-trash btnhapus"></i>
+									<i style="color : red" class="fas fa-trash btnhapus" id="btnDel3"></i>
 								</div>
 							</div>
 						</div>
@@ -318,12 +331,102 @@
 	<script async defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script async defer src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 	<script>
+		window.onload = function() {
+
+		}
 		$(document).ready(function() {
-			$('.btnhapus').click(function() {
+
+			var cartNum = 3;
+			$('#btnchecklist1').click(function() {
+				$('#btnchecklist1').toggleClass('text-primary');
+			});
+			$('#btnchecklist2').click(function() {
+				$('#btnchecklist2').toggleClass('text-primary');
+			})
+			$('#btnchecklist3').click(function() {
+				$('#btnchecklist3').toggleClass('text-primary');
+			});
+
+			$('#minBtn1').click(function() {
+				let number = document.querySelector('#amountInput1').value;
+				number = parseInt(number);
+				if (number > 0) {
+					number -= 1;
+				} else {
+					Swal.fire('Perhatian', 'jumlah barang harus lebih dari 1', 'warning');
+				}
+				document.querySelector('#amountInput1').setAttribute('value', number);
+			})
+			$('#minBtn2').click(function() {
+				let number = document.querySelector('#amountInput2').value;
+				number = parseInt(number);
+				if (number > 0) {
+					number -= 1;
+				} else {
+					Swal.fire('Perhatian', 'jumlah barang harus lebih dari 1', 'warning');
+				}
+				document.querySelector('#amountInput2').setAttribute('value', number);
+			})
+			$('#minBtn3').click(function() {
+				let number = document.querySelector('#amountInput3').value;
+				number = parseInt(number);
+				if (number > 0) {
+					number -= 1;
+				} else {
+					Swal.fire('Perhatian', 'jumlah barang harus lebih dari 1', 'warning');
+				}
+				document.querySelector('#amountInput3').setAttribute('value', number);
+			});
+			$('#plsBtn1').click(function() {
+				let number = document.querySelector('#amountInput1').value;
+				number = parseInt(number);
+				number += 1;
+				document.querySelector('#amountInput1').setAttribute('value', number);
+			});
+			$('#plsBtn2').click(function() {
+				let number = document.querySelector('#amountInput2').value;
+				number = parseInt(number);
+				number += 1;
+				document.querySelector('#amountInput2').setAttribute('value', number);
+			});
+			$('#plsBtn3').click(function() {
+				let number = document.querySelector('#amountInput3').value;
+				number = parseInt(number);
+				number += 1;
+				document.querySelector('#amountInput3').setAttribute('value', number);
+			})
+
+
+			$('#btnDel1').click(function() {
+
 				Swal.fire('Berhasil',
 					'Item Berhasil dihapus dari keranjang',
 					'success');
+				$('#cartItem1').hide();
+				cartNum -= 1;
+				document.getElementById('cartNumberPhone').innerHTML = cartNum;
+				document.getElementById('cartNumberPc').innerHTML = cartNum;
 			});
+
+			$('#btnDel2').click(function() {
+				Swal.fire('Berhasil',
+					'Item Berhasil dihapus dari keranjang',
+					'success');
+				$('#cartItem2').hide();
+				cartNum -= 1;
+				document.getElementById('cartNumberPhone').innerHTML = cartNum;
+				document.getElementById('cartNumberPc').innerHTML = cartNum;
+			});
+
+			$('#btnDel3').click(function() {
+				Swal.fire('Berhasil',
+					'Item Berhasil dihapus dari keranjang',
+					'success');
+				$('#cartItem3').hide();
+				cartNum -= 1;
+				document.getElementById('cartNumberPhone').innerHTML = cartNum;
+				document.getElementById('cartNumberPc').innerHTML = cartNum;
+			})
 		})
 
 	</script>
