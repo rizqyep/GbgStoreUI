@@ -501,7 +501,7 @@
 				Swal.fire('Berhasil',
 					'Item Berhasil ditambahkan ke keranjang',
 					'success');
-				cartNum += 1;
+				cartNum += Number($('#amountInput').val());
 				document.getElementById('cartNumberPhone').innerHTML = cartNum;
 				document.getElementById('cartNumberPc').innerHTML = cartNum;
 			});
