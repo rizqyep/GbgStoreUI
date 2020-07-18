@@ -183,9 +183,9 @@
 					</div>
 					<div class="col-lg-10">
 						<span class="d-inline amount">
-							<button class="btn btn-success btn-sm text-center btn-amount">-</button>
-							<input type="text" class="form-amount">
-							<button class="btn btn-success btn-sm text-center btn-amount">+</button>
+							<button class="btn btn-success btn-sm text-center btn-amount" id="minBtn">-</button>
+							<input type="text" class="form-amount text-center" id="amountInput" value="0">
+							<button class="btn btn-success btn-sm text-center btn-amount" id="plsBtn">+</button>
 						</span>
 					</div>
 				</div>
@@ -481,6 +481,22 @@
 				cartNum += 1;
 				document.getElementById('cartNumberPhone').innerHTML = cartNum;
 				document.getElementById('cartNumberPc').innerHTML = cartNum;
+			});
+			$('#minBtn').click(function() {
+				let number = document.querySelector('#amountInput').value;
+				number = parseInt(number);
+				if (number > 0) {
+					number -= 1;
+				} else {
+					Swal.fire('Perhatian', 'jumlah barang harus lebih dari 1', 'warning');
+				}
+				document.querySelector('#amountInput').setAttribute('value', number);
+			});
+			$('#plsBtn').click(function() {
+				let number = document.querySelector('#amountInput').value;
+				number = parseInt(number);
+				number += 1;
+				document.querySelector('#amountInput').setAttribute('value', number);
 			});
 
 		})
