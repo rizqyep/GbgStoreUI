@@ -269,6 +269,13 @@
 					'Terima Kasih telah melakukan verifikasi pembayaran , Verifikasi anda sedang diproses, Silahkan tunggu konfirmasi berikutnya!',
 					'success');
 			})
+
+			$('#bukti').on('change', function() {
+				//get the file name
+				var fileName = $(this).val();
+				//replace the "Choose a file" label
+				$(this).next('.custom-file-label').html(fileName.substr(12));
+			})
 		})
 
 	</script>
