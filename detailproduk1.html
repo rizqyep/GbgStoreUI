@@ -44,20 +44,9 @@
 				<a class="dropdown-item text-white mt-3" href="transaksi.html">Transaksi</a>
 				<a class="dropdown-item text-white mt-3" href="cart.html">Cart <i
 						class="fas fa-shopping-cart float-right mt-1"></i></a>
-				<div class="row">
-					<div class="col-6 mt-3 ml-4">
-						<a href="" class="text-light"> Wishlist</a>
-					</div>
-					<div class="col-4">
-						<div class="wrapper mt-2">
-							<a class="nav-link " href="wishlist.html"><i class="fas fa-heart text-light ml-3"></i></a>
-							<span class="font-weight-bold text-center"
-								style="border-radius : 3px;top : 10px;position:absolute;right:15px; height : 15px;width: 12px; font-size : 10px; background-color: red;color :white;"
-								id="wishlistNumberPhone">0
-							</span>
-						</div>
-					</div>
-				</div><a class="dropdown-item text-white mt-3" href="checkout.html">Checkout</a>
+				<a class="dropdown-item text-white mt-3" href="wishlist.html">Wishlist <i
+						class="fas fa-heart float-right mt-1"></i></a>
+				<a class="dropdown-item text-white mt-3" href="checkout.html">Checkout</a>
 				<a class="dropdown-item text-white mt-3" href="#">Chat <i
 						class="fas fa-comments float-right mt-1"></i></a>
 				<hr class="bg-light"><a class="dropdown-item text-white mt-3" href="#">Log Out <i
@@ -126,22 +115,9 @@
 								<a class="dropdown-item text-white mt-3" href="transaksi.html">Transaksi</a>
 								<a class="dropdown-item text-white mt-3" href="cart.html">Cart <i
 										class="fas fa-shopping-cart float-right mt-1"></i></a>
-
-								<div class="row">
-									<div class="col-7 mt-3 ml-4">
-										<a href="" class="text-light"> Wishlist</a>
-									</div>
-									<div class="col-3">
-										<div class="wrapper mt-2">
-											<a class="nav-link " href="wishlist.html"><i
-													class="fas fa-heart text-light mr-5"></i></a>
-											<span class="font-weight-bold text-center" style="border-radius : 3px;top : 10px;position:absolute;right:18px; height : 15px;width: 12px; font-size :
-												10px; background-color: red;color :white;" id="wishlistNumberPc">
-												0 </span>
-										</div>
-									</div>
-								</div>
-								<a class="dropdown-item text-white mt-2" href="checkout.html">Checkout</a>
+								<a class="dropdown-item text-white mt-3" href="wishlist.html">Wishlist <i
+										class="fas fa-heart float-right mt-1"></i></a>
+								<a class="dropdown-item text-white mt-3" href="checkout.html">Checkout</a>
 								<a class="dropdown-item text-white mt-3" href="#">Chat <i
 										class="fas fa-comments float-right mt-1"></i></a>
 								<hr class="bg-light"><a class="dropdown-item text-white mt-3" href="#">Log Out <i
@@ -173,7 +149,8 @@
 						<p class="font-weight-bold">60x <span class="text-muted">Terjual</span></p>
 					</div>
 					<div class="col-5 col-lg-2">
-						<p class="font-weight-bold">4x <span class="text-muted">Wishlist</span></p>
+						<p class="font-weight-bold"> <span id="wishlistNumber">4</span>x <span
+								class="text-muted">Wishlist</span></p>
 					</div>
 					<div class="col-2 col-lg-2 ">
 						<a href="#" class="font-weight-bold" style="color : black"><i style="font-size : 24px;"
@@ -525,13 +502,11 @@
 				$('#wishlistButton').toggleClass('text-danger');
 				if (wishlisted === false) {
 					wishlisted = true;
-					document.getElementById('wishlistNumberPhone').innerHTML = "1";
-					document.getElementById('wishlistNumberPc').innerHTML = "1";
+					document.getElementById('wishlistNumber').innerHTML = "5";
 
 				} else {
 					wishlisted = false;
-					document.getElementById('wishlistNumberPhone').innerHTML = "0";
-					document.getElementById('wishlistNumberPc').innerHTML = "0";
+					document.getElementById('wishlistNumber').innerHTML = "4";
 				}
 			})
 
